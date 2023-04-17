@@ -1,3 +1,9 @@
+#Esta en una app sencilla, echale un ojo
+#Se que me falta mucho por mejorar
+#Agradezco cualquier consejo
+
+
+#Importacion de las librerias
 from pytube import YouTube
 import flet
 from flet import (
@@ -15,8 +21,10 @@ from flet import (
         )
 
 
-
-
+#Ventana principal.
+#Intente que fuese la ventana estuviera en un solor archivo
+#pero simplemente no lo logre.
+#Estoy empezando con python @un mes y medio aprox
 def ventana(page: Page):
     page.theme_mode = ThemeMode.DARK
     page.bgcolor = '#1E293B'
@@ -24,7 +32,9 @@ def ventana(page: Page):
     page.window_height = 550
     page.vertical_alignment = MainAxisAlignment.CENTER
     
-
+    #Defino las funciones
+    #intente que las @clases estuvieran primero,
+    #pero me daba error.
     def abrir_alerta(e):
         Estilos.alerta.open = True
         Estilos.alerta.update()
@@ -46,7 +56,8 @@ def ventana(page: Page):
         page.update()
     
 
-    
+    #Aqui estan un tipo de @clases
+    #debo mejorar, lo se
 
     class Titulo:
         titulo = Container(
@@ -106,12 +117,14 @@ con exito!!''',
                 )
         
 
-
+    #esto se ve feo, pero fue la forma
+    #en que funciono
     btn_mp3 = Estilos.btn_mp3
     btn_mp4 = Estilos.btn_mp4
     url = Estilos.url
     titulo = Titulo.titulo
     
+    #aqui se agregan los elementos a la pantalla
     page.add(
             Row([
                 titulo,

@@ -7,6 +7,7 @@
 from pytube import YouTube
 import flet
 from flet import (
+        WEB_BROWSER,
         BottomSheet,
         Container,
         ElevatedButton,
@@ -138,4 +139,4 @@ con exito!!''',
             )
 
 if __name__ == "__main__":
-    flet.app(target=ventana)
+    flet.app(target=ventana, view=WEB_BROWSER)
